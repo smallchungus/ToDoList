@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert("Hello World");
+        });
+    </script>
     <title>To Do List</title>
-
-    <div class="container">
-        <div id="tasks">
-            <input type="text" placeholder="add tasks">
-            <button id="push">Add</button>
-        </div>
-    </div>
 </head>
 <body>
-
+<div class="container">
+    <div id="newtask">
+        <input type="text" placeholder="Add Tasks">
+        <button id="push">Add</button>
+    </div>
+    <div id="tasks"></div>
+</div>
 </body>
 </html>
